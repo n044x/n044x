@@ -1,0 +1,137 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+
+.sidebar {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: green;
+    text-decoration: none;
+}
+
+
+.main-content {
+    flex: 1;
+}
+
+
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-bar nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.filter-bar nav a.active {
+    color: green;
+    font-weight: bold;
+}
+
+.sort-by {
+    color: #666;
+}
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-card {
+    width: 200px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: background-color 0.3s ease, border 0.3s ease; 
+}
+
+.product-card:hover {
+    background-color: #90EE90; /* Light green background */
+    color: white; 
+    border: 1px solid white;
+} 
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease; 
+}
+
+.product-card img:hover {
+    transform: scale(1.1); 
+}
+
+.product-card h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+.product-card .price {
+    font-size: 16px;
+    color: green;
+}
+
+.sale-banner {
+    background-color: #E8F5E9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.sale-banner h2 {
+    color: #2E7D32;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sale-banner p {
+    color: #388E3C;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sale-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
