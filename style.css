@@ -1,137 +1,172 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
     background-color: #f9f9f9;
 }
 
-.container {
+.services {
     display: flex;
-    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #fff;
+    gap: 20px;
 }
 
-
-.sidebar {
-    width: 200px;
-    margin-right: 20px;
+.service {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
 }
 
-.sidebar h2 {
+.service img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    color: #5aac44;
+    margin: 10px 0;
     font-size: 18px;
+}
+
+.service p {
+    color: #666;
+    font-size: 14px;
+}
+
+.newsletter {
+    flex: 2;
+    min-width: 300px;
+}
+
+.newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #5aac44;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #4a9538;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px 40px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.footer-top img {
+    max-width: 100px;
+}
+
+.footer-top p {
+    margin: 0;
+    font-size: 14px;
     color: #333;
 }
 
-.sidebar ul {
+.footer-top div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-top div span {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    gap: 5px;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.footer-links div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h4 {
+    color: #5aac44;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
     list-style: none;
     padding: 0;
 }
 
-.sidebar ul li {
-    margin-bottom: 10px;
+.footer-links ul li {
+    margin-bottom: 8px;
 }
 
-.sidebar ul li a {
-    color: green;
+.footer-links ul li a {
+    color: #333;
     text-decoration: none;
 }
 
-
-.main-content {
-    flex: 1;
+.footer-links ul li a:hover {
+    color: #5aac44;
 }
 
-
-.filter-bar {
+.social-media li, .payment-methods li {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-.filter-bar nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #333;
-}
-
-.filter-bar nav a.active {
-    color: green;
-    font-weight: bold;
-}
-
-.sort-by {
-    color: #666;
-}
-
-
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-}
-
-.product-card {
-    width: 200px;
-    background-color: white;
-    padding: 15px;
-    border: 1px solid #ddd;
-    text-align: center;
-    transition: background-color 0.3s ease, border 0.3s ease; 
-}
-
-.product-card:hover {
-    background-color: #90EE90; /* Light green background */
-    color: white; 
-    border: 1px solid white;
-} 
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    transition: transform 0.3s ease; 
-}
-
-.product-card img:hover {
-    transform: scale(1.1); 
-}
-
-.product-card h3 {
-    font-size: 16px;
-    color: #333;
-}
-
-.product-card .price {
-    font-size: 16px;
-    color: green;
-}
-
-.sale-banner {
-    background-color: #E8F5E9;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-
-.sale-banner h2 {
-    color: #2E7D32;
-    font-size: 24px;
     margin-bottom: 10px;
 }
 
-.sale-banner p {
-    color: #388E3C;
-    font-size: 18px;
-    margin-bottom: 20px;
+.social-media li img, .payment-methods li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
-.sale-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+.footer-bottom {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    padding: 10px 0;
 }
