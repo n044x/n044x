@@ -1,0 +1,8 @@
+body{
+font-family:'Cera Pro';
+        src:local('Cera Pro Black'), local('Cera-Pro-Black'),
+            url('CeraPro-Black.woff2') format('woff2'),
+            url('CeraPro-Black.woff') format('woff'),
+            url('CeraPro-Black.ttf') format('truetype');
+        font-weight:900;
+        font-style:normal;}

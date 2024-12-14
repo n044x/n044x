@@ -1,0 +1,775 @@
+body{
+    font-family: 'Cera Pro';
+        src: local('Cera Pro Black'), local('Cera-Pro-Black'),
+            url('CeraPro-Black.woff2') format('woff2'),
+            url('CeraPro-Black.woff') format('woff'),
+            url('CeraPro-Black.ttf') format('truetype');
+        font-weight:900;
+        font-style:normal;
+        margin:0;
+        padding:0;
+        background-color: #ffffff;
+    }
+    
+    header {
+        padding: 20px 50px;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    header .logo img {
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    header .logo span {
+        font-size: 20px;
+        font-weight: bold;
+        color: #46A358;
+    }
+    
+    nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center; 
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+        position: relative;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #3d3d3d;
+        font-size: 16px;
+    }
+    
+    nav ul li a.active {
+        color: #46A358;
+        font-weight: bold;
+    }
+    
+    nav ul li a.active::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #46A358;
+        margin-top: 5px;
+    }
+    
+    .login-button {
+        background-color: #46A358;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    .hero {
+        overflow: hidden; 
+        padding: 50px;
+        background-color: #ffffff;
+    }
+    
+    .hero-text {
+        float: left;
+        width: 50%;
+        text-align: left;
+    }
+    
+    .hero-text h1 {
+        font-size: 4rem;
+        color: #3d3d3d;
+        line-height: 1.2;
+    }
+    
+    .hero-text h1 span {
+        color: #46A358;
+    }
+    
+    .hero-text p {
+        margin: 20px 0;
+        color: #3d3d3d;
+        font-size: 1rem;
+    }
+    
+    .hero-text .shop-button {
+        background-color: #46A358;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    
+    .hero-image {
+        float: right;
+        width: 50%;
+        position: relative;
+        text-align: center;
+    }
+    
+    .hero-image img {
+        max-width: 100%;
+    }
+    
+    .hero-image .small-plant {
+        position: absolute;
+        bottom: 0;
+        left: 60%;
+        transform: translateX(-50%);
+        width: 120px;
+    }
+    
+    body {
+        
+        font-family: 'Cera Pro';
+        src: local('Cera Pro Black'), local('Cera-Pro-Black'),
+            url('CeraPro-Black.woff2') format('woff2'),
+            url('CeraPro-Black.woff') format('woff'),
+            url('CeraPro-Black.ttf') format('truetype');
+        font-weight:900;
+        font-style:normal;
+         margin: 0;
+         padding: 0;
+         background-color: #f9f9f9;
+     }
+     
+     .container {
+         width: 100%;
+         overflow: hidden;
+         padding: 20px;
+     }
+     
+     .sidebar {
+         width: 200px;
+         float: left;
+         margin-right: 20px;
+     }
+     
+     .sidebar h2 {
+         font-size: 18px;
+         color: #333;
+     }
+     
+     .sidebar ul {
+         list-style: none;
+         padding: 0;
+     }
+     
+     .sidebar ul li {
+         margin-bottom: 10px;
+     }
+     
+     .sidebar ul li a {
+         color: #333; 
+         text-decoration: none;
+     }
+     
+     .sidebar ul li:first-child a {
+         color: green;
+     }
+     
+     .main-content {
+         float: left;
+         width: calc(100% - 240px); 
+     }
+     
+     .filter-bar {
+         overflow: hidden;
+         margin-bottom: 20px;
+     }
+     
+     .filter-bar nav a {
+         float: left;
+         margin-right: 15px;
+         text-decoration: none;
+         color: #333;
+         position: relative;
+     }
+     
+     .filter-bar nav a.active {
+         color: green;
+         font-weight: bold;
+     }
+     
+     .filter-bar nav a.active::after {
+         content: '';
+         display: block;
+         width: 100%;
+         height: 3px;
+         background-color: green;
+         margin-top: 5px;
+     }
+     
+     .sort-by {
+         float: right;
+         color: #666;
+     }
+     
+     .products-grid {
+         overflow: hidden;
+         margin: 0 auto;
+     }
+     
+     .product-card {
+         float: left;
+         width: calc(33.33% - 20px); 
+         margin: 10px;
+         background-color: white;
+         padding: 10px;
+         border: 1px solid #ddd;
+         text-align: center;
+         transition: background-color 0.3s ease, border 0.3s ease;
+         box-sizing: border-box;
+         height: 350px; 
+     }
+     
+     .product-card:nth-child(3n+1) {
+         clear: both;
+     }
+     
+     .product-card:hover {
+         background-color: white; 
+         color: black; 
+         border: 1px solid #ddd; 
+     } 
+     
+     .product-card img {
+         max-width: 100%;
+         height: 200px; 
+         object-fit: cover;
+         border-radius: 0; 
+         transition: transform 0.3s ease;
+     }
+     
+     .product-card img:hover {
+         transform: scale(1.1);
+     }
+     
+     .product-card h3 {
+         font-size: 14px; 
+         color: #333;
+     }
+     
+     .product-card .price {
+         font-size: 14px; 
+         color: green;
+     }
+     
+     .sale-banner {
+         clear: both;
+         background-color: #E8F5E9;
+         padding: 20px;
+         border-radius: 10px;
+         text-align: center;
+         margin-bottom: 20px;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+         width: 100%;
+     }
+     
+     .sale-banner h2 {
+         color: #2E7D32;
+         font-size: 24px;
+         margin-bottom: 10px;
+     }
+     
+     .sale-banner p {
+         color: #388E3C;
+         font-size: 18px;
+         margin-bottom: 20px;
+     }
+     
+     .sale-image img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 10px;
+     }
+     
+     .container {
+        width: 80%;
+        margin: 20px auto;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .card {
+        display: flex;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: left;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        margin: 10px 0;
+        width: 48%;
+    }
+    
+    .card img {
+        width: 292px;
+        height: 292px;
+        border-radius: 5px 0 0 5px;
+        object-fit: cover;
+    }
+    
+    .card-content {
+        padding: 15px;
+        flex: 1;
+    }
+    
+    .card-content h3 {
+        font-size: 18px;
+        margin: 0 0 10px;
+        color: #333;
+    }
+    
+    .card-content p {
+        font-size: 14px;
+        color: #666;
+        margin: 0 0 15px;
+    }
+    
+    .card-content a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    
+    .card-content a:hover {
+        background-color: #218838;
+    }
+    
+    .card:nth-child(2) img {
+        width: 287px;
+        height: 287px;
+    }
+    
+    @media (max-width: 768px) {
+        .card {
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .card img {
+            border-radius: 5px 5px 0 0;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    body {
+        font-family: 'Cera Pro';
+        src: local('Cera Pro Black'), local('Cera-Pro-Black'),
+            url('CeraPro-Black.woff2') format('woff2'),
+            url('CeraPro-Black.woff') format('woff'),
+            url('CeraPro-Black.ttf') format('truetype');
+        font-weight:900;
+        font-style:normal;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #3d3d3d;
+    }
+    
+    .blog-posts {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .blog-posts h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: #3d3d3d;
+    }
+    
+    .blog-posts p {
+        font-size: 16px;
+        color: #727272;
+        margin-bottom: 30px;
+    }
+    
+    .post-list {
+        display: flex;
+        justify-content: center; 
+        gap: 20px; 
+        align-items: stretch; 
+    }
+    
+    .post {
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between; 
+        width: 268px;
+        background-color: #fff;
+        margin: 15px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: left;
+    }
+    
+    
+    
+    .post img {
+        width: 268px;
+        height: 195px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .post h3 {
+        font-size: 18px;
+        color: #3d3d3d;
+        margin: 10px 0;
+    }
+    
+    .post p:first-of-type {
+        font-size: 14px;
+        color: #46A358; 
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .post p {
+        font-size: 14px;
+        color: #666;
+        margin: 5px 0 10px;
+    }
+    
+    .post:nth-child(3) a {
+        color: #3d3d3d; 
+    }
+    
+    .post a {
+        color: #46A358;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .post a:hover {
+        text-decoration: underline;
+    }
+    
+    body {
+        font-family: 'Cera Pro';
+        src: local('Cera Pro Black'), local('Cera-Pro-Black'),
+            url('CeraPro-Black.woff2') format('woff2'),
+            url('CeraPro-Black.woff') format('woff'),
+            url('CeraPro-Black.ttf') format('truetype');
+        font-weight:900;
+        font-style:normal;
+    margin: 0;
+    padding: 0;
+    color: #3d3d3d;
+    background-color: #f9f9f9;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.service {
+    text-align: center;
+    width: 204px;
+}
+
+.service img {
+    display: block;
+    margin: 0 auto;
+    width: 77px;
+    height: 95.47px;
+}
+
+.service:nth-child(2) img {
+    width: 83px;
+    height: 92.76px;
+}
+
+.service:nth-child(3) img {
+    width: 90px;
+    height: 92.19px;
+}
+
+.service p {
+    color: #727272;
+    line-height: 1.5;
+    margin: 10px 0 0;
+}
+
+.newsletter {
+    width: 354px;
+    text-align: left;
+}
+
+.newsletter input {
+    width: calc(100% - 120px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #46A358;
+    color: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    height: 70;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: 34.3px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #3d3d3d;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.payment-methods {
+    margin-top: 10px;
+    display: block;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #727272;
+}
+
+body {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Black'), local('Cera-Pro-Black'),
+        url('CeraPro-Black.woff2') format('woff2'),
+        url('CeraPro-Black.woff') format('woff'),
+        url('CeraPro-Black.ttf') format('truetype');
+    font-weight:900;
+    font-style:normal;
+    margin: 0;
+    padding: 0;
+    color: #3d3d3d;
+    background-color: #f9f9f9;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.service {
+    text-align: center;
+    width: 204px;
+}
+
+.service img {
+    display: block;
+    margin: 0 auto;
+    width: 77px;
+    height: 95.47px;
+}
+
+.service:nth-child(2) img {
+    width: 83px;
+    height: 92.76px;
+}
+
+.service:nth-child(3) img {
+    width: 90px;
+    height: 92.19px;
+}
+
+.service p {
+    color: #727272;
+    line-height: 1.5;
+    margin: 10px 0 0;
+}
+
+.newsletter {
+    width: 354px;
+    text-align: left;
+}
+
+.newsletter input {
+    width: calc(100% - 120px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #46A358;
+    color: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.footer {
+    background-color:  #3d3d3d;;
+    padding: 40px 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    height: 70;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: 34.3px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #3d3d3d;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    color: #3d3d3d;
+}
+
+.footer-links li {
+    margin: 5px 0;
+    color: #3d3d3d;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.payment-methods {
+    margin-top: 10px;
+    display: block;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #727272;
+}
